@@ -22,14 +22,12 @@ def check_url(url):
    if problem:
       print("\n SUSPICIOUS FOUND:")
       for problem in problem:
-         print(f" {problem}")
-         
+         print(f" {problem}")     
    else:
       print("\n URL looks safe (basic check)")
       
    return problem
 
 if __name__ == "__main__":
-   print("Phishing Detector")
    website = input("Enter URL to check: ")
    check_url(website)
